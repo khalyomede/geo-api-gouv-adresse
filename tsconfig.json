@@ -1,0 +1,10 @@
+{
+    "include": ["src"],
+    "compilerOptions": {
+        "strict": true,
+        "alwaysStrict": true,
+        "target": "ES2015",
+        "moduleResolution": "Node",
+        "esModuleInterop": true
+    }
+}

@@ -1,0 +1,343 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>&quot;search&quot; | geo-api-gouv-adresse</title>
+	<meta name="description" content="Documentation for geo-api-gouv-adresse">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">geo-api-gouv-adresse</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_search_.html">&quot;search&quot;</a>
+				</li>
+			</ul>
+			<h1>Module &quot;search&quot;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_search_.html#checksearchoptions" class="tsd-kind-icon">check<wbr>Search<wbr>Options</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_search_.html#getsearchurl" class="tsd-kind-icon">get<wbr>Search<wbr>Url</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_search_.html#search" class="tsd-kind-icon">search</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="checksearchoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Search<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Search<wbr>Options<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_isearchoptions_.isearchoptions.html" class="tsd-signature-type">ISearchOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in search.ts:62</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>May throw exceptions if the options are malformed.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the first argument is not an Object.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the options contains unknown parameters.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the autocomplete key of the option is not a Boolean.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the longitude key of the option is not a Number.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{RangeError} If the longitude key of the options is not between -180 and 180.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the latitude key of the options is not a Number.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{RangeError} If the latitude key of the options is not between 0 and 90.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the type key of the options is not a String.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{Error} If the type key is not one of the allowed options (see the documentation).</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the postcode key of the options is not a String.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the citycode key of the options is not a String.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_isearchoptions_.isearchoptions.html" class="tsd-signature-type">ISearchOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The search options.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="getsearchurl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Search<wbr>Url</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Search<wbr>Url<span class="tsd-signature-symbol">(</span>searchTerm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_isearchoptions_.isearchoptions.html" class="tsd-signature-type">ISearchOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in search.ts:179</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs the URL from the search term and the options.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>searchTerm: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The search query as text.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_isearchoptions_.isearchoptions.html" class="tsd-signature-type">ISearchOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The options to customize the search results.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The constructed URL;</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="search" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> search</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">search<span class="tsd-signature-symbol">(</span>searchTerm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_isearchoptions_.isearchoptions.html" class="tsd-signature-type">ISearchOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_isearchresults_.isearchresults.html" class="tsd-signature-type">ISearchResults</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in search.ts:24</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Execute a search on the French address database and get a list of results.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the first argument is not an Object.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the options contains unknown parameters.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the autocomplete key of the option is not a Boolean.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the longitude key of the option is not a Number.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{RangeError} If the longitude key of the options is not between -180 and 180.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the latitude key of the options is not a Number.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{RangeError} If the latitude key of the options is not between 0 and 90.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the type key of the options is not a String.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{Error} If the type key is not one of the allowed options (see the documentation for more details).</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the postcode key of the options is not a String.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{TypeError} If the citycode key of the options is not a String.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>{Error} If no response could be fetched from the server.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>searchTerm: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The search to perform.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_isearchoptions_.isearchoptions.html" class="tsd-signature-type">ISearchOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The options to customize the result.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_isearchresults_.isearchresults.html" class="tsd-signature-type">ISearchResults</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A promise with an object containing the search results (see the documentation for more details).</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_isearchgeometry_.html">&quot;ISearch<wbr>Geometry&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_isearchoptions_.html">&quot;ISearch<wbr>Options&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_isearchresult_.html">&quot;ISearch<wbr>Result&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_isearchresultproperty_.html">&quot;ISearch<wbr>Result<wbr>Property&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_isearchresults_.html">&quot;ISearch<wbr>Results&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_searchtype_.html">&quot;<wbr>Search<wbr>Type&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="_search_.html">&quot;search&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_search_.html#checksearchoptions" class="tsd-kind-icon">check<wbr>Search<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_search_.html#getsearchurl" class="tsd-kind-icon">get<wbr>Search<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_search_.html#search" class="tsd-kind-icon">search</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

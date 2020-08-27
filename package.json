@@ -1,0 +1,46 @@
+{
+    "name": "geo-api-gouv-adresse",
+    "version": "0.1.0",
+    "description": "Everything you can do from the Geo API Gouv adresse endpoint.",
+    "main": "lib/index.js",
+    "repository": "https://github.com/khalyomede/geo-api-gouv-adresse",
+    "author": "Khalyomede <khalyomede@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "devDependencies": {
+        "@rollup/plugin-typescript": "5.*",
+        "@types/chai-as-promised": "7.*",
+        "@types/jest": "26.*",
+        "jest": "26.*",
+        "np": "6.*",
+        "npm-check-updates": "7.*",
+        "rollup": "2.*",
+        "rollup-plugin-terser": "7.*",
+        "ts-jest": "26.*",
+        "ts-node": "9.*",
+        "tslib": "2.*",
+        "typedoc": "0.18.*",
+        "typescript": "4.*"
+    },
+    "dependencies": {
+        "axios": "0.20.*"
+    },
+    "scripts": {
+        "build": "ncu && rollup -c && tsc --emitDeclarationOnly --declaration --declarationDir lib && typedoc --out docs src",
+        "test": "jest --coverage test",
+        "release": "np"
+    },
+    "files": [
+        "lib/index.js",
+        "lib/index.d.ts",
+        "lib/ISearchGeometry.d.ts",
+        "lib/ISearchOptions.d.ts",
+        "lib/ISearchResult.d.ts",
+        "lib/ISearchResultProperty.d.ts",
+        "lib/ISearchResults.d.ts",
+        "lib/search.d.ts",
+        "lib/SearchType.d.ts",
+        "dist/index.js",
+        "dist/index.min.js"
+    ]
+}

@@ -1,0 +1,281 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>geo-api-gouv-adresse</title>
+	<meta name="description" content="Documentation for geo-api-gouv-adresse">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">geo-api-gouv-adresse</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>geo-api-gouv-adresse</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#geo-api-gouv-adresse" id="geo-api-gouv-adresse" style="color: inherit; text-decoration: none;">
+					<h1>geo-api-gouv-adresse</h1>
+				</a>
+				<p>Everything you can do from the Geo API Gouv adresse endpoint.</p>
+				<a href="#summary" id="summary" style="color: inherit; text-decoration: none;">
+					<h2>Summary</h2>
+				</a>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#requirements">Requirements</a></li>
+					<li><a href="#installation">Installation</a></li>
+					<li><a href="#examples">Examples</a></li>
+					<li><a href="https://khalyomede.github.io/geo-api-gouv-adresse/globals.html">API</a></li>
+				</ul>
+				<a href="#about" id="about" style="color: inherit; text-decoration: none;">
+					<h2>About</h2>
+				</a>
+				<p>This library is a wrapper for using the Data Gouv API Adresse endpoint.</p>
+				<p>It offers no more features than what is possible with the endpoint, and the options name are the exact same.</p>
+				<p>I created the library because I have only seen <a href="https://github.com/Raesta/gouv-geo-api">one package</a>, that was not tested, and not up to date.</p>
+				<a href="#requirements" id="requirements" style="color: inherit; text-decoration: none;">
+					<h2>Requirements</h2>
+				</a>
+				<p>If you use it via the CDN link, you need to use axios alongside the library (check the examples).</p>
+				<p>If you use it on Node.JS, you already have NPM and (Node or Yarn) installed in your machine, and axios will be pulled at the installation.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<a href="#browser" id="browser" style="color: inherit; text-decoration: none;">
+					<h3>Browser</h3>
+				</a>
+				<p>In the <code>&lt;body&gt;</code> of your HTML document, add these CDNs links (don&#39;t add axios if it is already present).</p>
+				<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Some website<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/axios@0.20.0/dist/axios.min.js&quot;</span>
+        &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/geo-api-gouv-adresse@0.1.0/dist/index.min.js&quot;</span>
+        &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+            <span class="hljs-comment">// Call the library here...</span>
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+				<a href="#nodejs" id="nodejs" style="color: inherit; text-decoration: none;">
+					<h3>Node.JS</h3>
+				</a>
+				<p>In your root folder, open a terminal and install the library:</p>
+				<pre><code class="language-bash">npm install --save-dev geo-api-gouv-adresse</code></pre>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h2>Examples</h2>
+				</a>
+				<p>For a complete list of options, see the <a href="https://khalyomede.github.io/geo-api-gouv-adresse/interfaces/_isearchoptions_.isearchoptions.html">online documentation</a>.</p>
+				<ul>
+					<li><a href="#search-from-an-address">Search from an address</a></li>
+					<li><a href="#limiting-search-results">Limiting search results</a></li>
+				</ul>
+				<a href="#search-from-an-address" id="search-from-an-address" style="color: inherit; text-decoration: none;">
+					<h3>Search from an address</h3>
+				</a>
+				<p>In this example, we will use a partially complete address, and get the results for this address.</p>
+				<a href="#browser-1" id="browser-1" style="color: inherit; text-decoration: none;">
+					<h4>Browser</h4>
+				</a>
+				<pre><code class="language-javascript">geoApiGouvAdresse
+    .search(<span class="hljs-string">&quot;8 bd du port&quot;</span>)
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+        response.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">address</span>) </span>{
+            <span class="hljs-built_in">console</span>.log(
+                <span class="hljs-string">&quot;found a matching street name:&quot;</span>,
+                address.properties.name
+            );
+        });
+    })
+    .catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;an error occured&quot;</span>);
+    });</code></pre>
+				<a href="#nodejs-1" id="nodejs-1" style="color: inherit; text-decoration: none;">
+					<h4>Node.JS</h4>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { search } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;geo-api-gouv-adresse&quot;</span>;
+<span class="hljs-comment">// or</span>
+<span class="hljs-comment">// const { search } = require(&quot;geo-api-gouv-adresse&quot;);</span>
+
+<span class="hljs-keyword">const</span> main = <span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">let</span> results = {};
+
+    <span class="hljs-keyword">try</span> {
+        results = <span class="hljs-keyword">await</span> search(<span class="hljs-string">&quot;8 bd du&quot;</span>);
+    } <span class="hljs-keyword">catch</span> (exception) {
+        <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&quot;an error occured&quot;</span>);
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> address <span class="hljs-keyword">of</span> results.features) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`found a matching street name: <span class="hljs-subst">${address.properties.name}</span>`</span>);
+    }
+};
+
+main();</code></pre>
+				<p>For a detail on how the response is composed, see the official <a href="https://geo.api.gouv.fr/adresse">Geo API gouv adresse website</a>, and the <a href="https://github.com/geocoders/geocodejson-spec/tree/master/draft">Geocode JSON spec</a>.</p>
+				<a href="#limiting-search-results" id="limiting-search-results" style="color: inherit; text-decoration: none;">
+					<h3>Limiting search results</h3>
+				</a>
+				<p>In this example, we will limit the number of results for the street we are searching for.</p>
+				<a href="#browser-2" id="browser-2" style="color: inherit; text-decoration: none;">
+					<h4>Browser</h4>
+				</a>
+				<pre><code class="language-javascript">geoApiGouvAdresse
+    .search(<span class="hljs-string">&quot;8 bd du port&quot;</span>, { <span class="hljs-attr">limit</span>: <span class="hljs-number">10</span> })
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+        response.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">address</span>) </span>{
+            <span class="hljs-built_in">console</span>.log(
+                <span class="hljs-string">&quot;found a matching street name:&quot;</span>,
+                address.properties.name
+            );
+        });
+    })
+    .catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;an error occured&quot;</span>);
+    });</code></pre>
+				<a href="#nodejs-2" id="nodejs-2" style="color: inherit; text-decoration: none;">
+					<h4>Node.JS</h4>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { search } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;geo-api-gouv-adresse&quot;</span>;
+<span class="hljs-comment">// or</span>
+<span class="hljs-comment">// const { search } = require(&quot;geo-api-gouv-adresse&quot;);</span>
+
+<span class="hljs-keyword">const</span> main = <span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">let</span> response = {};
+
+    <span class="hljs-keyword">try</span> {
+        response = <span class="hljs-keyword">await</span> search(<span class="hljs-string">&quot;8 bd du&quot;</span>, {
+            <span class="hljs-attr">limit</span>: <span class="hljs-number">10</span>,
+        });
+    } <span class="hljs-keyword">catch</span> (exception) {
+        <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&quot;an error occured&quot;</span>);
+
+        <span class="hljs-keyword">return</span>;
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> address <span class="hljs-keyword">of</span> response.features) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`found a matching street name: <span class="hljs-subst">${address.properties.name}</span>`</span>);
+    }
+};
+
+main();</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_isearchgeometry_.html">&quot;ISearch<wbr>Geometry&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_isearchoptions_.html">&quot;ISearch<wbr>Options&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_isearchresult_.html">&quot;ISearch<wbr>Result&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_isearchresultproperty_.html">&quot;ISearch<wbr>Result<wbr>Property&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_isearchresults_.html">&quot;ISearch<wbr>Results&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_searchtype_.html">&quot;<wbr>Search<wbr>Type&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_search_.html">&quot;search&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
