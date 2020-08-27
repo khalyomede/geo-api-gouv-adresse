@@ -2,7 +2,7 @@
 
 Everything you can do from the Geo API Gouv adresse endpoint.
 
-[![Build Status](https://travis-ci.com/khalyomede/geo-api-gouv-adresse.svg?branch=master)](https://travis-ci.com/khalyomede/geo-api-gouv-adresse) [![codecov](https://codecov.io/gh/khalyomede/geo-api-gouv-adresse/branch/master/graph/badge.svg)](https://codecov.io/gh/khalyomede/geo-api-gouv-adresse)
+[![npm](https://img.shields.io/npm/v/geo-api-gouv-adresse)](https://www.npmjs.com/package/geo-api-gouv-adresse) [![NPM](https://img.shields.io/npm/l/geo-api-gouv-adresse)](https://github.com/khalyomede/geo-api-gouv-adresse/blob/master/LICENSE) [![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/geo-api-gouv-adresse/axios)](https://www.npmjs.com/package/axios) [![Build Status](https://travis-ci.com/khalyomede/geo-api-gouv-adresse.svg?branch=master)](https://travis-ci.com/khalyomede/geo-api-gouv-adresse) [![codecov](https://codecov.io/gh/khalyomede/geo-api-gouv-adresse/branch/master/graph/badge.svg)](https://codecov.io/gh/khalyomede/geo-api-gouv-adresse) [![Maintainability](https://api.codeclimate.com/v1/badges/1b84e5be2b39745bbdbb/maintainability)](https://codeclimate.com/github/khalyomede/geo-api-gouv-adresse/maintainability) ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/geo-api-gouv-adresse) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/geo-api-gouv-adresse) ![npm type definitions](https://img.shields.io/npm/types/geo-api-gouv-adresse)
 
 ## Summary
 
