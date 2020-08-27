@@ -106,6 +106,8 @@ const main = async () => {
         results = await search("8 bd du");
     } catch (exception) {
         console.error("an error occured");
+
+        return;
     }
 
     for (const address of results.features) {
