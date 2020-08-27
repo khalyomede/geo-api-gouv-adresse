@@ -68,6 +68,7 @@
 					<h1>geo-api-gouv-adresse</h1>
 				</a>
 				<p>Everything you can do from the Geo API Gouv adresse endpoint.</p>
+				<p><a href="https://travis-ci.com/khalyomede/geo-api-gouv-adresse"><img src="https://travis-ci.com/khalyomede/geo-api-gouv-adresse.svg?branch=master" alt="Build Status"></a> <a href="https://codecov.io/gh/khalyomede/geo-api-gouv-adresse"><img src="https://codecov.io/gh/khalyomede/geo-api-gouv-adresse/branch/master/graph/badge.svg" alt="codecov"></a></p>
 				<a href="#summary" id="summary" style="color: inherit; text-decoration: none;">
 					<h2>Summary</h2>
 				</a>
@@ -165,6 +166,8 @@
         results = <span class="hljs-keyword">await</span> search(<span class="hljs-string">&quot;8 bd du&quot;</span>);
     } <span class="hljs-keyword">catch</span> (exception) {
         <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&quot;an error occured&quot;</span>);
+
+        <span class="hljs-keyword">return</span>;
     }
 
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> address <span class="hljs-keyword">of</span> results.features) {
