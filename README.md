@@ -2,7 +2,7 @@
 
 Everything you can do from the Geo API Gouv adresse endpoint.
 
-[![Build Status](https://travis-ci.com/khalyomede/geo-api-gouv-adresse.svg?branch=master)](https://travis-ci.com/khalyomede/geo-api-gouv-adresse)
+[![Build Status](https://travis-ci.com/khalyomede/geo-api-gouv-adresse.svg?branch=master)](https://travis-ci.com/khalyomede/geo-api-gouv-adresse) [![codecov](https://codecov.io/gh/khalyomede/geo-api-gouv-adresse/branch/master/graph/badge.svg)](https://codecov.io/gh/khalyomede/geo-api-gouv-adresse)
 
 ## Summary
 
