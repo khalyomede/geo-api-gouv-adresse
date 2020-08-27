@@ -11,6 +11,7 @@
         "@rollup/plugin-typescript": "5.*",
         "@types/chai-as-promised": "7.*",
         "@types/jest": "26.*",
+        "codecov": "3.*",
         "jest": "26.*",
         "np": "6.*",
         "npm-check-updates": "7.*",
@@ -28,7 +29,8 @@
     "scripts": {
         "build": "ncu && rollup -c && tsc --emitDeclarationOnly --declaration --declarationDir lib && typedoc --out docs src",
         "test": "jest --coverage test",
-        "release": "np"
+        "release": "np",
+        "coverage": "codecov"
     },
     "files": [
         "lib/index.js",
