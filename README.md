@@ -2,6 +2,8 @@
 
 Everything you can do from the Geo API Gouv adresse endpoint.
 
+[![Build Status](https://travis-ci.com/khalyomede/geo-api-gouv-adresse.svg?branch=master)](https://travis-ci.com/khalyomede/geo-api-gouv-adresse)
+
 ## Summary
 
 -   [About](#about)
